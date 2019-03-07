@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='vue.js' ></script>
+  </head>
+<body>
+  <div id='tej'>
+ <input type='text' v-on:input="project">
+  <h1  >{{end}}--{{game}}-</h1>
+   </div>
+  <script>
+   new Vue({
+    el:'#tej',
+    data:{
+       end:'First Project Begins for Void_minds()',
+       game:'and this is my first program ',
+       
+      
+    },
+
+    methods:{
+      project:function(event)
+      {
+       this.game=event.target.value;
+    }
+    
+
+
+    }
+   });
+  
+  
+  dff
+  </script>
+
+
+
+</body></html>

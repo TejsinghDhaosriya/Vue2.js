@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div  id='tej'>
+
+<input type="text" v-on:input="hack2">
+<h1 v-once>{{teju}}</h1>
+
+<p>{{ hack() }}</p>
+
+<a v-bind:href="link">fb</a>
+<p v-html='AnotherLink'></p>
+</div>
+
+<script>
+new Vue({
+el:'#tej',
+data:{ 
+    teju:"The Last One",
+    hope:"Living only on that",
+    link:"https:fb.com",
+    AnotherLink:'<a href="https://google.com">google</a>'
+},
+
+methods:{
+ hack:function(){ 
+     return this.teju="Yes I am ";
+ },
+ hack2:function(event){
+     this.hope=event.target.value;
+ }
+}
+
+
+});
+
+</script>
+
+
+
+
+</body>
+</html>
